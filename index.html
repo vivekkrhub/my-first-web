@@ -4,55 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            margin: 5px;
-            padding: 5px;
-        }
-
-        body {
-            background-color: pink;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            margin: 5px;
-            padding: 5px;
-        }
-
-        button {
-            margin: 15px;
-            padding: 9px 33px;
-            font-size: 8px;
-            background: #222;
-            color: #0ff;
-            border: 2px solid #0ff;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.4s;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-    </style>
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>
-        Welcome to our website
-    </h1>
-    <p>
-        Hyy this is me, and im going to create a normal and clean website, so let's go!!
-    </p>
-    <button>Click me</button>
-
+    <div class="msg-container hide">
+        <p id="msg"> Winner</p>
+        <button id="new-btn">New Game</button>
+    </div>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button class="btn">Reset Game</button>
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
